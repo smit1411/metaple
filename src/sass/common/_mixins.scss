@@ -1,0 +1,94 @@
+//min-media
+// $min-sm: "(min-width : 576px)";
+// $min-md: "(min-width : 768px)";
+// $min-lg: "(min-width : 992px)";
+// $min-xl: "(min-width : 1200px)";
+// $min-xxl: "(min-width : 1400px)";
+
+//max-media
+$max-xxs: "(max-width : 320px)";
+$max-xs: "(max-width : 420px)";
+$max-sm: "(max-width : 576px)";
+$max-md: "(max-width : 768px)";
+$max-lg: "(max-width : 992px)";
+$max-l: "(max-width : 1024px)";
+$max-xl: "(max-width : 1200px)";
+$max-xxl: "(max-width : 1400px)";
+
+
+@mixin media($value) {
+
+
+    //min-media-condition
+    @if $value ==min-xs {
+        @media #{$min-xs} {
+            @content;
+        }
+    }
+
+    @else if $value ==min-sm {
+        @media #{$min-sm} {
+            @content;
+        }
+    }
+
+    @else if $value ==min-md {
+        @media #{$min-md} {
+            @content;
+        }
+    }
+
+    @else if $value ==min-lg {
+        @media #{$min-lg} {
+            @content;
+        }
+    }
+
+    @else if $value ==min-xl {
+        @media #{$min-xl} {
+            @content;
+        }
+    }
+
+    //max-media-condition
+    @else if $value ==max-xxs {
+        @media #{$max-xxs} {
+            @content;
+        }
+    }
+    @else if $value ==max-xs {
+        @media #{$max-xs} {
+            @content;
+        }
+    }
+
+    @else if $value ==max-sm {
+        @media #{$max-sm} {
+            @content;
+        }
+    }
+
+    @else if $value ==max-md {
+        @media #{$max-md} {
+            @content;
+        }
+    }
+
+    @else if $value ==max-lg {
+        @media #{$max-lg} {
+            @content;
+        }
+    }
+    
+    @else if $value ==max-l {
+        @media #{$max-l} {
+            @content;
+        }
+    }
+
+    @else if $value ==max-xl {
+        @media #{$max-xl} {
+            @content;
+        }
+    }
+}

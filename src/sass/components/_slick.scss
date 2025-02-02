@@ -1,0 +1,16 @@
+.slick-slider .slick-track{
+    @include media(max-md){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.slick-slide {
+    @include media(max-md){
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: fit-content;
+    }
+}
